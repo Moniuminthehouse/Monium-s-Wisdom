@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace Moniums_Wisdom
+namespace Moniums_Wisdom //name
 {
     public partial class Form1 : Form
     {
@@ -9,12 +9,11 @@ namespace Moniums_Wisdom
             InitializeComponent();
 
 
+ //background stuff
+            this.BackgroundImage = Image.FromFile(@"C:\Users\souha\OneDrive\Images\Catfrom.png"); 
+            
 
-            // Load image from file
-            this.BackgroundImage = Image.FromFile(@"C:\Users\souha\OneDrive\Images\Catfrom.png");
-
-            // Set layout (optional)
-            this.BackgroundImageLayout = ImageLayout.Stretch; // Options: Tile, Center, Zoom, None
+            this.BackgroundImageLayout = ImageLayout.Stretch; 
 
 
         }
@@ -26,7 +25,7 @@ namespace Moniums_Wisdom
             int thyrandom = random.Next(1, 10);
 
 
-            switch (thyrandom)
+            switch (thyrandom) //9 different messages all different from each other 
             {
                 case 0:
                     {
@@ -106,7 +105,7 @@ namespace Moniums_Wisdom
 
         }
 
-        private void AboutButton_Click(object sender, EventArgs e)
+        private void AboutButton_Click(object sender, EventArgs e) //meaning of monium wisdom
         {
             MessageBox.Show("This is the first application made by monium! it includes 2 buttons one that has 10 messages for the users and one that picks a number between 1 - 100 send feedback to my instagram (moniuminthehouse)");
         }
